@@ -1,12 +1,12 @@
 import db from "../Database/index.js";
 function ModuleRoutes(app) {
   app.get("/api/modules", (req, res) => {
-    const modules = Database.modules;
+    const modules = db.modules;
     res.send(modules);
   });
 
   app.get("/api/users", (req, res) => {
-    const users = Database.users;
+    const users = db.users;
     res.send(users);
   });
 
