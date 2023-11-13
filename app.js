@@ -12,7 +12,7 @@ const app = express()
 app.use(
   cors({
     credentials: true,
-    origin: "https://a5--stellar-gumdrop-f909ef.netlify.app"
+    origin: process.env.FRONTEND_URL
   })
 );
 
