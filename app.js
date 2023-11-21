@@ -8,6 +8,8 @@ import "dotenv/config";
 
 
 import cors from "cors";
+import mongoose from 'mongoose';
+mongoose.connect("mongodb://localhost:27017/kanbas")
 const app = express()
 app.use(
   cors({
